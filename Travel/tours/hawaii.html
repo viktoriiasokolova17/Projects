@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog | Tours | Hawaii</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../main.css">
+
+</head>
+<body>
+
+    <header class="header">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo-name">Travel Blog</span>
+                </a>      
+            </div>
+             <!-- Burger menu icon -->
+             <div class="burger-icon">
+                <i class="material-icons">menu</i>
+            </div>
+            
+                <nav class="header-nav">          
+                    <a href="../index.html">Home</a>
+                    <a href="../tours.html">Tours</a>
+                    <a href="../index.html#destination-section">Destinations</a>
+                    <a href="../index.html#travel-tips-section">Travel Tips</a>
+                    <a href="../blog.html">Blog</a>
+                    <a href="../index.html#gallery-section">Gallery</a>
+                    <a href="../index.html#about-us-section">About Us</a>
+                    <a href="../index.html#contact-section">Contact</a>
+
+            <div class="header-search">
+                <i class="material-icons">search</i>
+                <input type="text">
+                    <a href="#" class="search">Search</a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <section class="tours-description-section">
+        <h2 class="section-heading">Hawaii Tour</h2>
+
+        <div class="tour-page">
+            <img src="../image/hawaii.jpg" alt="Hawaii" class="tour-image">
+                <div class="tour-details">
+                    <div class="tour-price">
+                        Price: $2600 
+                    </div>
+                 
+                    <div class="tour-inclusions">
+                        <h2>What's Included in the tour?</h2>
+                        <ul class="inclusion-list">
+                            <li><i class="material-icons">flight</i><span>Flight</span></li>
+                            <li><i class="material-icons">directions_bus</i><span>Transfer</span></li>
+                            <li><i class="material-icons">hotel</i><span>Accommodation</span></li>
+                            <li><i class="material-icons">restaurant</i><span>Meals</span></li>
+                            <li><i class="material-icons">health_and_safety</i><span>Medical Insurance</span></li>
+                        </ul>
+                    </div>
+
+
+                    <button class="btn-book" data-tour="hawaii">
+                        <a href="#" class="btn-book">Book Now</a>
+                    </button>
+                </div>
+        </div>
+
+        <div class="tour-description"> 
+            <h2>About the Tour</h2>
+            <p>Explore the lush islands of Hawaii, known for their volcanic landscapes, stunning beaches, and vibrant culture. This tour offers a blend of adventure and relaxation in a tropical paradise.</p>
+        
+            <h2>Tour Route</h2>
+            <p>The tour includes visits to Oahu, Maui, and the Big Island. You’ll hike to waterfalls, visit active volcanoes, relax on black sand beaches, and snorkel in coral reefs.</p>
+        
+            <h2>Travel Tips</h2>
+            <p>Pack light clothing, comfortable sandals, and a swimsuit. Bring a rain jacket for sudden tropical showers and a hat to protect from the sun. Don’t forget to try local dishes like poke and shave ice.</p>
+        </div>
+        
+        
+    </section>
+
+    
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="../index.html">Home</a>
+            <a href="../tours.html">Tours</a>
+            <a href="../index.html#destination-section">Destinations</a>
+            <a href="../index.html#travel-tips-section">Travel Tips</a>
+            <a href="../blog.html">Blog</a>
+            <a href="../index.html#gallery-section">Gallery</a>
+            <a href="../index.html#about-us-section">About Us</a>
+            <a href="../index.html#contact-section">Contact</a>
+        </nav>
+<br>
+        <p>&copy; 2024 Travel Blog | All rights reserved | Privacy Policy | Terms of Service</p>
+        
+    </footer>
+
+    <div id="reservation-modal" class="reservation-modal">
+        <div class="reservation-modal-content">
+            <span class="reservation-modal-close">&times;</span> 
+            <h1 class="reservation-h1"></h1> 
+    
+            <form class="reservation-form" id="reservation-form" action="#" method="post">
+                <label class="reservation-form-label" for="reservation-full-name">Full Name:</label>
+                <input class="reservation-form-input" type="text" id="reservation-full-name" name="reservation-full-name" required>
+                <div id="name-error" class="error-message"></div>
+
+                <label class="reservation-form-label" for="reservation-phone">Phone Number:</label>
+                <input class="reservation-form-input" type="tel" id="reservation-phone" name="reservation-phone" required>
+                <div id="phone-error" class="error-message"></div>
+
+                <label class="reservation-form-label" for="reservation-email">Email:</label>
+                <input class="reservation-form-input" type="email" id="reservation-email" name="reservation-email" required>
+                <div id="email-error" class="error-message"></div>
+    
+                <label class="reservation-form-label" for="reservation-people">Number of People:</label> 
+                <select class="reservation-people" id="reservation-people" name="reservation-people">
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                </select>
+                <div id="total-price"></div> 
+    
+                <button type="submit">Submit</button>
+            </form>
+    
+        </div>
+    </div>
+    
+    <script src="../js/tours-modal.js"></script>
+    <script src="../js/tours.js"></script>
+    <script src="../js/mobile.js"></script>
+</body>
+</html>

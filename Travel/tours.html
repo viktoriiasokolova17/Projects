@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog | Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+            <div class="logo">
+              <a href="./index.html">
+                    <span class="logo-name">Travel Blog</span>
+                </a> 
+            </div>
+              <!-- Burger menu icon -->
+              <div class="burger-icon">
+                <i class="material-icons">menu</i>
+              </div>
+
+                <nav class="header-nav">        
+                  <a href="./index.html">Home</a>
+                  <a href="./tours.html">Tours</a>
+                  <a href="./index.html#destination-section">Destinations</a>
+                  <a href="./index.html#travel-tips-section">Travel Tips</a>
+                  <a href="./blog.html">Blog</a>
+                  <a href="./index.html#gallery-section">Gallery</a>
+                  <a href="./index.html#about-us-section">About Us</a>
+                  <a href="./index.html#contact-section">Contact</a>
+                
+            <div class="header-search">
+                <i class="material-icons">search</i>
+                <input type="text">
+                    <a href="#" class="search">Search</a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <section class="tours-section">
+      <h2 class="section-heading">Tours</h2>
+      
+      <div class="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="sea">Sea</button>
+        <button data-filter="city">City</button>
+        <button data-filter="desert">Desert</button>
+        <button data-filter="mountains">Mountains</button>
+      </div>
+
+      <div class="tours-list">
+            <div class="tour-card" data-id="1" data-category="sea">
+              <img src="./image/1 iceland.png" alt="Iceland" class="tour-img">
+                <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                  <h3>Iceland</h3>
+                    <p>Explore the breathtaking landscapes of Iceland, with its stunning waterfalls, geysers, and hot springs.</p>
+                    <span class="category-hashtag">#Sea</span>
+                    <a href="./tours/iceland.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="2" data-category="desert">
+                <img src="./image/2 sahara.png" alt="Sahara" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Sahara</h3>
+                      <p>Experience the vast and stunning Sahara Desert, with its rolling sand dunes and ancient oases.</p>
+                      <span class="category-hashtag">#Desert</span> 
+                      <a href="./tours/sahara.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="3" data-category="city">
+                <img src="./image/kyoto-japan.png" alt="Kyoto" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Kyoto</h3>
+                      <p>Discover the historic temples and beautiful gardens of Kyoto, Japan's ancient capital.</p>
+                      <span class="category-hashtag">#City</span>
+                      <a href="./tours/kyoto.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="4" data-category="city">
+                <img src="./image/3 santorini.png" alt="Santorini" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Santorini</h3>
+                      <p>Enjoy the stunning sunsets and white-washed buildings of Santorini, Greece.</p>
+                      <span class="category-hashtag">#City</span> 
+                      <a href="./tours/santorini.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="5" data-category="city">
+                <img src="./image/4 paris.png" alt="Paris" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Paris</h3>
+                      <p>Explore the romantic city of Paris, known for its iconic landmarks and rich culture.</p>
+                      <span class="category-hashtag">#City</span>
+                      <a href="./tours/paris.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="6" data-category="sity">
+                <img src="./image/5 new york.png" alt="New York" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>New York</h3>
+                      <p>Experience the vibrant life of New York City, with its famous attractions and diverse neighborhoods.</p>
+                      <span class="category-hashtag">#City</span>
+                      <a href="./tours/new york.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="7" data-category="mountains">
+                <img src="./image/himalayas.png" alt="Himalayas" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Himalayas</h3>
+                      <p>Experience the majestic Himalayas, with its high peaks and serene landscapes.</p>
+                      <span class="category-hashtag">#Mountains</span>
+                      <a href="./tours/himalayas.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="8" data-category="mountains">
+                <img src="./image/alps.png" alt="Alps" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Alps</h3>
+                      <p>Enjoy the picturesque Alps, perfect for skiing and mountain hiking.</p>
+                      <span class="category-hashtag">#Mountains</span>
+                      <a href="./tours/alps.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="9" data-category="sea">
+                <img src="./image/maldives.png" alt="Maldives" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Maldives</h3>
+                      <p>Relax on the pristine beaches of the Maldives, a tropical paradise.</p>
+                      <span class="category-hashtag">#Sea</span>
+                      <a href="./tours/maldives.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="10" data-category="city">
+              <img src="./image/barcelona.jpg" alt="Barcelona" class="tour-img">
+                 <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Barcelona</h3>
+                      <p>Marvel at the stunning architecture of Barcelona, including Gaudí's masterpieces.</p>
+                      <span class="category-hashtag">#City</span>
+                      <a href="./tours/barcelona.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="11" data-category="sea">
+                <img src="./image/bahamas.jpg" alt="Bahamas" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Bahamas</h3>
+                      <p>Enjoy the crystal-clear waters and vibrant coral reefs of the Bahamas.</p>
+                      <span class="category-hashtag">#Sea</span>
+                      <a href="./tours/bahamas.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="12" data-category="mountains">
+                <img src="./image/rockymountains.jpg" alt="Rocky Mountains" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Rocky Mountains</h3>
+                      <p>Explore the rugged beauty of the Rocky Mountains, home to diverse wildlife.</p>
+                      <span class="category-hashtag">#Mountains</span>
+                      <a href="./tours/rocky-mountains.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="13" data-category="city">
+                <img src="./image/berlin.jpg" alt="Berlin" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Berlin</h3>
+                      <p>Explore the history, art, and vibrant culture of Berlin, Germany.</p>
+                      <span class="category-hashtag">#City</span>
+                      <a href="./tours/berlin.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="14" data-category="sea">
+                <img src="./image/hawaii.jpg" alt="Hawaii" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Hawaii</h3>
+                      <p>Experience the unique volcanic landscapes and beaches of Hawaii.</p>
+                      <span class="category-hashtag">#Sea</span>
+                      <a href="./tours/hawaii.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="15" data-category="city">
+                <img src="./image/tokyo.jpg" alt="Tokyo" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Tokyo</h3>
+                      <p>Experience the unique blend of tradition and technology in the bustling streets of Tokyo.</p>
+                      <span class="category-hashtag">#City</span>
+                      <a href="./tours/tokyo.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="16" data-category="sea">
+                <img src="./image/borabora.jpg" alt="Bora Bora" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Bora Bora</h3>
+                      <p>Discover the crystal-clear lagoons and overwater bungalows of Bora Bora.</p>
+                      <span class="category-hashtag">#Sea</span>
+                      <a href="./tours/bora-bora.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="17" data-category="city">
+                <img src="./image/sydney.jpg" alt="Sydney" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Sydney</h3>
+                      <p>Discover the iconic Sydney Opera House and stunning beaches of this Australian metropolis.</p>
+                      <span class="category-hashtag">#City</span>
+                      <a href="./tours/sydney.html" class="read-more">Read more</a>
+            </div>
+            <div class="tour-card" data-id="18" data-category="city">
+                <img src="./image/rome.jpg" alt="Rome" class="tour-img">
+                  <button class="like-btn"><i class="material-icons">favorite_border</i></button>
+                    <h3>Rome</h3>
+                      <p>Discover the ancient ruins and rich history of Rome, the Eternal City.</p>
+                      <span class="category-hashtag">#City</span>
+                      <a href="./tours/rome.html" class="read-more">Read more</a>
+            </div>
+        </div>
+      </div>
+      </section>
+
+    
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="./index.html">Home</a>
+            <a href="./tours.html">Tours</a>
+            <a href="./index.html#destination-section">Destinations</a>
+            <a href="./index.html#travel-tips-section">Travel Tips</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./index.html#gallery-section">Gallery</a>
+            <a href="./index.html#about-us-section">About Us</a>
+            <a href="./index.html#contact-section">Contact</a>
+        </nav>
+<br>
+        <p>&copy; 2024 Travel Blog | All rights reserved | Privacy Policy | Terms of Service</p>
+        
+    </footer>
+
+
+
+    <script src="js/tours.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mobile.js"></script>
+
+</body>
+</html>

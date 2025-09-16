@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+
+    <style>
+      .color-shift {
+        font-size: 24px;
+        font-weight: bold;
+        animation: colorChange 3s infinite linear;
+      }
+
+      @keyframes colorChange {
+        0% {
+          color: red;
+        }
+        25% {
+          color: blue;
+        }
+        50% {
+          color: green;
+        }
+        75% {
+          color: orange;
+        }
+        100% {
+          color: violet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="color-shift">Color Shifting Text</p>
+  </body>
+</html>

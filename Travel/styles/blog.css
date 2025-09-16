@@ -1,0 +1,155 @@
+/*blog*/
+.blog-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.blog-articles {
+    padding: 20px; 
+    margin: 0 auto; 
+    max-width: 800px; 
+}
+
+.blog-post {
+    margin-bottom: 30px; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.blog-post h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #005757;
+}
+
+.blog-post img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 8px; 
+    margin: 15px auto; 
+}
+
+.blog-section.articles-section {
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 2px solid #ddd;
+}
+
+.blog-section.articles-section h2 { 
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #005757;
+}
+
+
+.blog-section.articles-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-section.articles-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-section.articles-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-section.article-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.blog-section.article-content h3 {
+    margin: 0;
+    color: #008080;
+}
+
+.blog-section.article-details {
+    font-size: 12px;
+    color: #777;
+}
+
+.read-more {
+    display: inline-block;
+    font-size: 16px;
+    color: #008080;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .blog-main {
+        flex-direction: column; 
+    }
+    .blog-articles, 
+    .articles-section.blog-section {
+        width: 100%; 
+        padding: 10px; 
+    }
+    .blog-post img {
+        max-width: 90%; 
+    }
+    .blog-section.articles-item {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .blog-section.article-img {
+        width: 80%; 
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 770px) {
+    .header-nav, .footer-nav {
+        display: none; 
+    }
+    .burger-icon {
+        display: block; 
+    }
+    .blog-post h2 {
+        font-size: 20px; 
+    }
+    .blog-post p, 
+    .blog-section.article-content p {
+        font-size: 14px; 
+    }
+    .blog-section.article-img {
+        width: 70%; 
+    }
+}
+@media (max-width: 375px) {
+    .header, 
+    .footer {
+        padding: 10px; 
+    }
+    .blog-articles, 
+    .articles-section.blog-section {
+        padding: 5px;
+    }
+    .blog-post {
+        padding: 10px; 
+    }
+    .blog-post h2, 
+    .blog-section h2 {
+        font-size: 18px; 
+    }
+    .blog-section.article-img {
+        width: 100px; 
+    }
+    .read-more {
+        font-size: 14px; 
+    }
+}

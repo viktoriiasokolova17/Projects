@@ -1,0 +1,167 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; /* або 10 px*/
+    line-height: 1.6;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+    text-align: center;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  /* Fonts */
+  @font-face {
+    font-family: 'Open Sans'; 
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-U1UpcaXcl0Aw.woff2) format('woff2');
+  }
+
+  h1, h2 {
+    letter-spacing: 1px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+  
+  /* Paragraphs */
+
+  section > h2 + p {
+    margin-top: 20px;
+  }
+  
+  /* Links */
+
+a {
+  color: #a66; 
+  text-decoration: underline; 
+  outline: none; 
+}
+
+a:visited {
+  color: #8b4c4c; 
+}
+
+a:hover, a:focus {
+  text-decoration: none; 
+}
+
+a:active {
+  color: #000; 
+}
+
+a[href^="http"]:after {
+  content: ''; /* порожній контент для вставки фону */
+  display: inline-block;
+  width: 16px; 
+  height: 16px; 
+  background-image: url('./external-link.png'); 
+  background-size: contain; /* зображення вміщається в межах елемента, зберігаючи свої пропорції */
+  background-position: center; /* центрування зображення всередині елемента */
+  margin-left: 4px;
+
+}
+
+
+  /* Lists */
+
+  ul, ol {
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    padding: 0; 
+  }
+  
+  li {
+    line-height: 1.2; 
+    margin-bottom: 10px; 
+  }
+
+  /*Aside*/
+
+  aside ul {
+    list-style-type: square; /* квадратні маркери */
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  aside ul li {
+    margin-bottom: 10px; 
+  }
+  
+  /* Navigation menu */
+
+  nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  nav ul li {
+    margin-bottom: 20px; 
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    line-height: 2.2;
+    background-color: #eeeeee; 
+    color: #000; 
+    text-decoration: none; 
+    text-align: center;
+    border: #8b4c4c solid 1px;
+  }
+  
+  nav ul li a:hover, nav ul li a:focus {
+    background-color: #e47676; 
+    color: #000; 
+  }
+  
+  nav ul li a:active {
+    background-color: #aaa; 
+    color: #000; 
+  }

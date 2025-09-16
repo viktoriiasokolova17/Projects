@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .wrapper{
+            background: #fff;
+            min-width: 960px;
+            margin: 0 auto;
+            padding: 28px;
+        }
+        .blue{
+            background: blue;
+            float: right;
+        }
+        .red{
+            background: red;
+            float: left;
+        }
+        .green{
+            background: green;
+            float: inline-start;
+        }
+        .service{
+            background: #eee;
+            width: 30%;
+            margin: 1%;
+            height: 140px;
+
+        }
+        .service h2, service p{
+            color: #999;
+            margin: 18px 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <img src="cloud.jpg" width="300">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit illo aliquid minus! Tempore, quod assumenda. Vitae distinctio accusantium voluptatibus voluptatum, placeat impedit ad voluptas quas iste vel pariatur eius!</p> -->
+         <div class="blue-box service">
+            <h2>Service 1</h2>
+                <p>This is service 1</p>
+         </div>
+         <div class="red-box service">
+            <h2>Service 2</h2>
+                <p>This is service 2</p>
+         </div>
+         <div class="green-box service">
+            <h2>Service 3</h2>
+                <p>This is service 3</p>
+         </div>
+  </div>
+
+</body>
+</html>

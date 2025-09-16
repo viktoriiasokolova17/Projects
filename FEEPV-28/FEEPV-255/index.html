@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+
+    <script>
+      /*********************************************************************************/
+      //adding numbers
+
+      // Create a function 'add' that takes two parameters 'a' and 'b' and returns their sum
+
+      function add(a, b) {
+        return a + b;
+      }
+
+      console.log(add(3, 5)); //  8
+
+      /*********************************************************************************/
+      //subtracting numbers
+
+      // Create a function 'subtract' that takes two parameters 'a' and 'b' and returns the difference between 'a' and 'b'
+
+      function subtract(a, b) {
+        return a - b;
+      }
+
+      console.log(subtract(10, 3)); // 7
+
+      /*********************************************************************************/
+      // multiplying numbers
+
+      // Create a function 'multiply' that takes two parameters 'a' and 'b' and returns their product
+      function multiply(a, b) {
+        return a * b;
+      }
+
+      console.log(multiply(4, 5)); // 20
+
+      /*********************************************************************************/
+      // dividing numbers
+
+      // Create a function 'divide' that takes two parameters 'a' and 'b' and returns the result of 'a' divided by 'b'
+
+      function divide(a, b) {
+        return a / b;
+      }
+
+      console.log(divide(10, 2)); //  5
+
+      /*********************************************************************************/
+      // calculating the remainder
+
+      // Create a function 'remainder' that takes two parameters 'a' and 'b' and returns the remainder of 'a' divided by 'b'
+
+      function remainder(a, b) {
+        return a % b;
+      }
+
+      console.log(remainder(10, 3)); // 1
+
+      /*********************************************************************************/
+      //create a function to reverse a string
+
+      // Create a function called 'reverseString' that takes a string as input and returns the reversed string
+
+      function reverseString(str) {
+        return str.split("").reverse().join("");
+      }
+
+      console.log(reverseString("hello")); // "olleh"
+
+      /*********************************************************************************/
+      //create a function to check if a number is even
+
+      // Create a function called 'isEven' that takes a number as input and returns true if the number is even, false otherwise
+
+      function isEven(num) {
+        return num % 2 === 0;
+      }
+
+      console.log(isEven(2)); // Виведе: true
+      console.log(isEven(5)); // Виведе: false
+
+      /*********************************************************************************/
+      //create a function to calculate the factorial of a number
+
+      // Create a function called 'factorial' that takes a non-negative integer as input and returns the factorial of the input number
+      function factorial(n) {
+        if (n === 0 || n === 1) return 1;
+        return n * factorial(n - 1);
+      }
+
+      console.log(factorial(4)); // 24
+      console.log(factorial(5)); // 120
+
+      /*********************************************************************************/
+      //create a function to return the first n elements of the Fibonacci sequence
+
+      // Create a function called 'fibonacci' that takes a non-negative integer 'n' as input and returns an array containing the first n elements of the Fibonacci sequence
+
+      function fibonacci(n) {
+        let sequence = [0, 1];
+        for (let i = 2; i < n; i++) {
+          sequence.push(sequence[i - 1] + sequence[i - 2]);
+        }
+        return sequence.slice(0, n);
+      }
+
+      console.log(fibonacci(5)); // 0, 1, 1, 2, 3
+      console.log(fibonacci(10)); // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+      /*********************************************************************************/
+      //create a function to return the sum of all the even numbers in an array
+
+      // Create a function called 'sumEvenNumbers' that takes an array of numbers as input and returns the sum of all the even numbers in the input array
+      function sumEvenNumbers(arr) {
+        return arr.reduce((sum, num) => (num % 2 === 0 ? sum + num : sum), 0);
+      }
+
+      console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6])); // 12
+      console.log(sumEvenNumbers([10, 15, 20, 25])); // 30
+
+      /*********************************************************************************/
+      //Create a function to calculate the area of a rectangle
+
+      // Write a function named 'calculateRectangleArea' that takes two parameters, 'length' and 'width', to return the area of a rectangle. Area = length * width
+
+      function calculateRectangleArea(length, width) {
+        return length * width;
+      }
+
+      console.log(calculateRectangleArea(5, 10)); // 50
+      console.log(calculateRectangleArea(7, 3)); //  21
+
+      /*********************************************************************************/
+      //Create a function to check if a string is a palindrome
+
+      // Write a function named 'isPalindrome' that takes a string parameter 'word' and returns true if it is a palindrome (reads the same forwards and backwards), and false otherwise
+      /*********************************************************************************/
+
+      /*********************************************************************************/
+      function isPalindrome(word) {
+        return word === word.split("").reverse().join("");
+      }
+
+      console.log(isPalindrome("madam")); // true
+      console.log(isPalindrome("hello")); // false
+
+      /*********************************************************************************/
+      //Create a function to calculate the volume of a cylinder
+
+      // Write a function named 'calculateCylinderVolume' that takes two parameters, 'radius' and 'height', to return the volume of a cylinder. Volume = π * radius^2 * height. Use Math.PI for the value of π (pi)
+
+      function calculateCylinderVolume(radius, height) {
+        return Math.PI * radius ** 2 * height;
+      }
+
+      console.log(calculateCylinderVolume(3, 6)); // 169.6
+      console.log(calculateCylinderVolume(7, 3)); // 461.8
+
+      /*********************************************************************************/
+      // Create a Function to Generate a Random Number within a Range
+
+      // Write a function that takes a minimum and maximum value as arguments and returns a random number within that range
+      function randomNumberInRange(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      console.log(randomNumberInRange(1, 10)); // 5
+      console.log(randomNumberInRange(20, 50)); // 26
+
+      /*********************************************************************************/
+      //Create a Function to Calculate the Average of an Array
+
+      // Write a function that takes an array of numbers as an argument and calculates its average
+
+      function calculateAverage(arr) {
+        return arr.reduce((sum, num) => sum + num, 0) / arr.length;
+      }
+
+      console.log(calculateAverage([1, 2, 3, 4, 5])); // 3
+      console.log(calculateAverage([10, 20, 30])); // 20
+
+      /*********************************************************************************/
+      //Create a Function to Check if an Array Contains Duplicates
+
+      // Write a function that takes an array as an argument and returns true if it contains any duplicate elements, otherwise false
+
+      function hasDuplicates(arr) {
+        return new Set(arr).size !== arr.length;
+      }
+
+      console.log(hasDuplicates([1, 2, 3])); // false
+      console.log(hasDuplicates([1, 2, 3, 1, 1])); // true
+
+      /*********************************************************************************/
+      //Create a function to capitalize the first letter of each word in a sentence
+
+      // Write a function called capitalizeSentence that takes a sentence as a parameter and returns the same sentence with the first letter of each word capitalized. For example, if the sentence is 'hello world', the function should return 'Hello World'. The function should follow these steps: 1. Split the sentence into an array of words using the split() method and assign it to a variable. 2. Create an empty array called capitalizedWords. 3. Iterate over each word in the array of words. 4. Capitalize the first letter of each word using the toUpperCase() method on the first character and concatenate it with the rest of the word using the slice() method. 5. Push the capitalized word to the capitalizedWords array. 6. Convert the capitalizedWords array back to a string using the join() method with a space as the separator. 7. Return the capitalized sentence
+
+      function capitalizeSentence(sentence) {
+        return sentence
+          .split(" ")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ");
+      }
+
+      console.log(capitalizeSentence("hello world")); // Hello World
+
+      /*********************************************************************************/
+      //Create a function to calculate the hypotenuse of a right-angle triangle
+
+      // Write a function called calculateHypotenuse that takes the lengths of the two sides of a right-angle triangle as parameters (a and b) and returns the length of the hypotenuse. The function should follow these steps: 1. Calculate the square of side a using the Math.pow() method and assign it to a variable. 2. Calculate the square of side b using the Math.pow() method and assign it to a variable. 3. Add the squares of side a and side b together. 4. Calculate the square root of the sum using the Math.sqrt() method. 5. Return the calculated hypotenuse
+
+      function calculateHypotenuse(a, b) {
+        return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+      }
+
+      console.log(calculateHypotenuse(3, 4)); // 5
+      console.log(calculateHypotenuse(5, 12)); // 13
+
+      /*********************************************************************************/
+      //Create a function to check if a given number is a prime number
+
+      // Write a function called isPrime that takes a number as a parameter and returns true if the number is a prime number, and false otherwise. The function should follow these steps: 1. Check if the number is less than 2. If it is, return false because prime numbers must be greater than 1. 2. Iterate from 2 to the square root of the number (inclusive). 3. Check if the number is divisible evenly by any of the iterated values. If it is, return false because it's not a prime number. 4. If the loop completes without finding any divisors, return true because the number is a prime number
+
+      function isPrime(num) {
+        if (num < 2) return false;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i === 0) return false;
+        }
+        return true;
+      }
+
+      console.log(isPrime(2)); // true
+      console.log(isPrime(4)); // false
+
+      /*********************************************************************************/
+      //Create a Function to Check if a String is Palindrome
+
+      // Write a function isPalindrome(str) that takes a string as an argument and returns true if the string is a palindrome, and false otherwise. A palindrome is a word, phrase, or sequence of characters that reads the same forward and backward
+
+      function isPalindrome(str) {
+        return str === str.split("").reverse().join("");
+      }
+
+      console.log(isPalindrome("hello")); // false
+      console.log(isPalindrome("madam")); // true
+
+      /*********************************************************************************/
+      //Temperature Converter
+
+      // Develop a function that converts a temperature from Celsius to Fahrenheit and vice versa. The function should accept two arguments: the temperature (a number) and the scale to convert to, either 'C' for Celsius or 'F' for Fahrenheit. The function should return the converted temperature rounded to two decimal places.
+
+      function convertTemperature(temp, scale) {
+        return scale === "F" ? (temp * 9) / 5 + 32 : ((temp - 32) * 5) / 9;
+      }
+
+      console.log(convertTemperature(0, "F")); // 32
+      console.log(convertTemperature(100, "F")); // 212
+      console.log(convertTemperature(32, "C")); // 0
+      console.log(convertTemperature(212, "C")); //  100
+
+      /*********************************************************************************/
+      //Binary Gap Finder
+
+      // Create a function that takes a positive integer and finds the longest sequence of zeroes that is surrounded by ones at both ends in the binary representation of that number. The function should return the length of this sequence. If no such sequence exists, the function should return zero
+
+      function binaryGap(n) {
+        let binary = n.toString(2);
+        let gaps = binary.split("1").slice(1, -1);
+        return gaps.length ? Math.max(...gaps.map((g) => g.length)) : 0;
+      }
+
+      console.log(binaryGap(9)); // 2 (1001)
+      console.log(binaryGap(529)); // 4 (1000010001)
+      console.log(binaryGap(20)); // 1 (10100)
+      console.log(binaryGap(32)); // 0 (100000)
+
+      /*********************************************************************************/
+      // Digit Sum Calculator
+
+      // Create a function that computes the sum of all digits in a given integer. The function should handle both positive and negative numbers, but should disregard any non-digit characters. Return the sum as an integer
+
+      function digitSum(n) {
+        return Math.abs(n)
+          .toString()
+          .split("")
+          .reduce((sum, digit) => sum + Number(digit), 0);
+      }
+
+      console.log(digitSum(12345)); // 15
+      console.log(digitSum(-9876)); // 30
+      console.log(digitSum(0)); // 0
+
+      /*********************************************************************************/
+      //Array Manipulation
+
+      // Create a function named modifyArray that takes an array of numbers and a manipulation function as arguments. The manipulation function can be either double, which doubles each element, or square, which squares each element. Your modifyArray function should apply the chosen manipulation to each element and return the modified array
+
+      function modifyArray(arr, fn) {
+        return arr.map(fn);
+      }
+
+      function double(n) {
+        return n * 2;
+      }
+
+      function square(n) {
+        return n * n;
+      }
+
+      console.log(modifyArray([1, 2, 3, 4], double)); // 2, 4, 6, 8
+      console.log(modifyArray([1, 2, 3, 4], square)); // 1, 4, 9, 16
+
+      /*********************************************************************************/
+      // Array Element Finder
+
+      // Create a function called findElement that takes an array and a testing function as parameters. The testing function should accept an element and return a boolean value. findElement should return the first element in the array that satisfies the condition specified by the testing function. If no such element is found, return null
+
+      function findElement(arr, testFn) {
+        for (let el of arr) {
+          if (testFn(el)) return el;
+        }
+        return null;
+      }
+
+      console.log(findElement([1, 3, 5, 8, 10], (n) => n % 2 === 0)); // 8
+      console.log(findElement([1, 3, 5, 7], (n) => n > 10)); // null
+
+      /*********************************************************************************/
+      //Array Flattener
+
+      // Create a function named flattenArray that can flatten a nested array structure into a single array. The function should handle arrays of varying depths. For example, if given the input [1, [2, [3]], 4], the function should return [1, 2, 3, 4]
+
+      function flattenArray(arr) {
+        return arr.flat(Infinity);
+      }
+
+      console.log(flattenArray([1, [2, [3]], 4])); // 1, 2, 3, 4
+      console.log(flattenArray([[1, 2], [3, [4, 5]], 6])); // 1, 2, 3, 4, 5, 6
+
+      /*********************************************************************************/
+      //Unique Array Merger
+
+      // Design a function called mergeUniqueArrays that takes an arbitrary number of arrays as arguments and returns a single array containing only unique elements from all input arrays. Utilize the Set data structure to efficiently handle duplicate removal
+
+      function mergeUniqueArrays(...arrays) {
+        return [...new Set(arrays.flat())];
+      }
+
+      console.log(mergeUniqueArrays([1, 2, 3], [3, 4, 5], [5, 6])); // 1, 2, 3, 4, 5, 6
+      console.log(mergeUniqueArrays([7, 8], [8, 9, 10], [10, 11, 7])); // 7, 8, 9, 10, 11
+    </script>
+  </body>
+</html>

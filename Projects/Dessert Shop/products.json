@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Waffle with Berries",
+    "price": 6.5,
+    "image": "image/Waffle with Berries.png"
+  },
+  {
+    "id": 2,
+    "name": "Vanilla Bean Crème Brûlée",
+    "price": 7.0,
+    "image": "image/Vanilla Bean.png"
+  },
+  {
+    "id": 3,
+    "name": "Macaron Mix of Five",
+    "price": 8.0,
+    "image": "image/Macaron Mix of Five.png"
+  },
+  {
+    "id": 4,
+    "name": "Classic Tiramisu",
+    "price": 5.5,
+    "image": "image/Classic Tiramisu.png"
+  },
+  {
+    "id": 5,
+    "name": "Pistachio Baklava",
+    "price": 4.0,
+    "image": "image/Pistachio Baklava.png"
+  },
+  {
+    "id": 6,
+    "name": "Lemon Meringue Pie",
+    "price": 5.0,
+    "image": "image/Lemon Meringue Pie.png"
+  },
+  {
+    "id": 7,
+    "name": "Vanilla Panna Cotta",
+    "price": 6.5,
+    "image": "image/Vanilla Panna Cotta.png"
+  }
+]

@@ -1,0 +1,52 @@
+header{
+    border-width: 5px;
+}
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* .nav-list li{
+    /* width: max-content; */
+    /* flex-grow: 1;
+    flex-shrink:1; 
+    } */
+
+.columns{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;;
+    /* width: 800px; */
+    border: 10px solid firebrick;
+}
+
+.columns > * {
+    flex: 1px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.card{
+    background: greenyellow;
+    width: 100px;
+    height: 100px;
+}
+.card:nth-child(2){
+    background: pink;
+    align-self: stretch;
+}
+
+@media (min-width:750px) {
+    .columns{
+        flex-direction: row;
+    }
+}

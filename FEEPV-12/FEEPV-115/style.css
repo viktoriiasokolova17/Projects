@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root{
+    font-size: 62.5%;
+} */
+
+/* p{
+    font-size: 1rem;
+} */
+ div{
+    font-size: 2rem;
+    margin: 0% 5%;
+ }
+.px{
+    font-size: 32px;
+    padding: 16px;
+    background: lightblue;
+}
+
+/* .rem{
+    font-size: 2rem;
+    padding: 5rem;
+    background: lightcoral;
+} */

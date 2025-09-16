@@ -1,0 +1,52 @@
+body{
+    padding: 10%;
+    font-size: 2rem;
+}
+
+input, button{
+    font: inherit;
+}
+
+
+p{
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    text-decoration: line-through;
+
+    /* text-transform: uppercase; */
+    /* text-transform: capitalize;*/
+    
+    /* text-align: left;*/
+    /* text-align: right;*/
+    /*text-align: justify;*/
+    /*text-align: center; */
+
+    /* text-indent: 2rem; /*абзац* */
+
+    /* line-height: 1.2; */
+    /* line-height: 1.5; */
+    /* line-height: 2; */
+
+    /*letter-spacing: normal; */
+    /* letter-spacing: 3rem; */
+
+    /* word-spacing: 0.2rem; */
+    /* word-spacing: 0.5rem; */
+
+    /*font-weight: normal;*/
+    /*font-weight: 300;*/
+    /*font-weight: 500;*/
+    /*font-weight: 900;*/
+
+    /* font-style: italic; */
+    /* font-style: normal; */
+    /* font-style: oblique; */
+
+    /* font-family: serif; */
+    /* font-family: monospace; */
+    /* font-family:  sans-serif; */
+
+
+
+}
+

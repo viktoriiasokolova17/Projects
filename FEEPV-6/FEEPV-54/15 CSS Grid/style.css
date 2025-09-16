@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 50px auto 50px;
+  grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd" /* header, охоплює всі 9 стовпців */
+    "mn mn mn mn mn mn mn sb sb" /* main 7 стовпців і sidebar 2 стовпці */
+    "ft ft ft ft ft ft ft ft ft"; /* footer, охоплює всі 9 стовпців */
+    column-gap: 0.5rem;  /*  проміжок між стовпцями на 0.5 рем */
+}
+
+.el{
+  background-color: rebeccapurple;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+
+.header{
+  grid-area: hd;
+}
+
+.sidebar{
+  grid-area: sb;
+  background-color: #00f;
+}
+
+.footer{
+  grid-area: ft;
+} 
+
+.container{
+  grid-area: mn;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 2fr);
+  grid-auto-rows: minmax(150px, auto);
+  gap: 1rem;
+}
+
+.box{
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.box:first-child {
+  background-color: #00f;
+  grid-column: 1 / 4; /* елемент займає стовпці з 1 по 3 включно (тобто 3 стовпці) */
+  grid-row: 1 / 3; /* елемент займає рядки з 1 по 2 включно (тобто 2 рядки) */
+
+  display: grid;
+  place-content: center;/* центрує вміст елемента як по горизонталі, так і по вертикалі */
+}
+
+.box:nth-child(2) {
+  background-color: purple;
+  grid-column: 1 / 5; /* елемент займає стовпці з 1 по 4 включно (тобто 4 стовпці) */
+  grid-row: 3 / 4; /* елемент займає рядки з 3 по 4 включно (тобто лише 3 рядок) */
+}

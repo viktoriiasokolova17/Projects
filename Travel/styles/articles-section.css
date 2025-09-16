@@ -1,0 +1,115 @@
+/* articles-section */
+.articles-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.article {
+    display: flex;
+}
+
+.articles-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.articles-item {
+    display: flex; 
+    margin: 0 0 20px 0; 
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; 
+}
+
+.articles-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-color:  #008080;
+}
+
+.article-img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin-right: 20px; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.articles-item:hover .article-img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.article-content {
+    text-align: left;
+}
+
+.article-content h3{
+    color: #005757;
+}
+
+.article-details {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.show-more {
+    display: inline-block;
+    font-size: 16px;
+    color: #008080;
+    text-decoration: none;
+}
+
+  @media (max-width: 770px) {
+    .articles-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .article-content {
+        text-align: center;
+      }
+    .articles-list {
+      padding: 0 15px;
+    }
+    .article {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .article-img {
+      margin-bottom: 10px;
+      width: 280px;
+      height: 280px;
+      margin: 0;
+    }
+    .article-content h3 {
+      font-size: 18px;
+    }
+    .show-more {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 375px) {
+    .articles-item {
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    .article-img {
+      width: 200px;
+      height: 200px;
+    }
+    .article-content h3 {
+      font-size: 16px;
+    }
+    .article-details {
+      font-size: 12px;
+    }
+    .show-more {
+      font-size: 12px;
+    }
+  }
+  

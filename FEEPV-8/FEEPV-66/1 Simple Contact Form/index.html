@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контактна Форма</title>
+</head>
+<body>
+    <h2>Контактна Форма</h2>
+    <form action="/submit_form" method="post">
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="subject">Тема:</label><br>
+        <input type="text" id="subject" name="subject" required><br>
+        
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>

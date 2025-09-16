@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    margin: 6rem 0rem;
+}
+
+a,button{
+    color: purple;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 5px;
+}
+
+/* ul{
+    display: flex;
+    height: 10rem;
+    justify-content: flex-start;
+} */
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+li{
+    display: inline-block;
+    padding: 1rem;
+    color:#fff;
+    text-align: center;
+    /* opacity: 0.5; */
+    /* visibility: hidden; */
+}
+
+/* li:first-child{
+    align-items: flex-end;
+} */
+
+li:first-child{
+    grid-row: 3/4; /* лише третій ряд (на третьому рядку сітки і займатиме простір від початку третього рядка до початку четвертого) */
+    grid-column: 5/6;/* лише п’ятий стовпець (у п’ятому стовпці сітки і займатиме простір від початку п'ятого стовпця до початку шостого) */
+}
+
+span{
+    color: red;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.box1{
+    background: rgb(69, 88, 183);
+    padding: 1rem;
+    color: #000;
+}
+/* .box2{
+    background: rgb(126, 69, 183);
+}
+.box3{
+    background: rgb(172, 69, 183);
+}
+.box4{
+    background: rgb(183, 69, 111);
+} */

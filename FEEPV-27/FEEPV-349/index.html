@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+
+    <script>
+      /*********************************************************/
+      //Print numbers 1 to 5 using a for loop
+
+      // Write a for loop that prints numbers from 1 to 5 (inclusive) using console.log()
+
+      for (let i = 1; i <= 5; i++) {
+        console.log(i);
+      }
+      console.log("***************************");
+      /*********************************************************/
+      // Calculate the factorial of 5 using a for loop
+
+      // Write a for loop that calculates the factorial of 5 and assigns the result to the variable 'factorial' let factorial = 1;
+
+      let factorial = 1;
+
+      for (let i = 1; i <= 5; i++) {
+        factorial *= i;
+      }
+
+      console.log(factorial);
+      console.log("***************************");
+      /*********************************************************/
+      // Count the number of even numbers between 1 and 10 using a for loop
+
+      // Write a for loop that counts the number of even numbers between 1 and 10 (inclusive) and assigns the result to the variable 'count' let count = 0;
+
+      let count = 0;
+
+      for (let i = 1; i <= 10; i++) {
+        if (i % 2 === 0) {
+          count++;
+        }
+      }
+
+      console.log(count);
+
+      console.log("***************************");
+      /*********************************************************/
+      //Calculate the sum of odd numbers from 1 to 10 using a for loop
+
+      // Write a for loop that calculates the sum of odd numbers from 1 to 10 (inclusive) and assigns the result to the variable 'sum' let sum = 0;
+
+      let sum = 0;
+
+      for (let i = 1; i <= 10; i++) {
+        if (i % 2 !== 0) {
+          sum += i;
+        }
+      }
+
+      console.log(sum);
+      console.log("***************************");
+      /*********************************************************/
+      // Print the first 10 elements of the Fibonacci sequence using a for loop
+
+      // Write a for loop that prints the first 10 elements of the Fibonacci sequence using console.log() let a = 0; let b = 1;
+
+      let a = 0;
+      let b = 1;
+
+      console.log(a);
+      console.log(b);
+
+      for (let i = 3; i <= 10; i++) {
+        let next = a + b;
+        console.log(next);
+        a = b;
+        b = next;
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      //  Reverse a given string using a for loop
+
+      // Write a for loop that reverses a given string strand assigns the result to the variable 'reversed' let str = 'Hello'; let reversed = ''
+
+      let str = "Hello";
+      let reversed = "";
+
+      for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+      }
+
+      console.log(reversed);
+
+      console.log("***************************");
+      /*********************************************************/
+      //    Print the first 10 square numbers using a for loop
+
+      // Write a for loop that prints the first 10 square numbers using console.log()
+      for (let i = 1; i <= 10; i++) {
+        console.log(i * i);
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      //  Calculate the sum of all even numbers between 1 and 20 using a for loop
+
+      // Write a for loop that calculates the sum of all even numbers between 1 and 20 (inclusive) and assigns the result to the variable 'sum' let sum = 0
+
+      let summ = 0;
+
+      for (let i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
+          summ += i;
+        }
+      }
+
+      console.log(summ); // Виводимо результат у консоль
+
+      console.log("***************************");
+      /*********************************************************/
+      // Print the first 5 multiples of 7 using a for loop
+
+      // Write a for loop that prints the first 5 multiples of 7 using console.log()
+
+      for (let i = 1; i <= 5; i++) {
+        console.log(i * 7);
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      //  Calculate the factorial of a given number 'n' using a for loop
+
+      // Write a for loop that calculates the factorial of a given number nand assigns the result to the variable 'factorial' let n = 5; let factorial = 1;
+      console.log("***************************");
+      /*********************************************************/
+      let n = 5;
+      let factorial2 = 1;
+
+      for (let i = 1; i <= n; i++) {
+        factorial2 *= i;
+      }
+
+      console.log(factorial2);
+
+      console.log("***************************");
+      /*********************************************************/
+      // Print numbers in reverse order from 10 to 1 using a for loop
+
+      // Write a for loop that prints the numbers in reverse order from 10 to 1
+
+      for (let i = 10; i >= 1; i--) {
+        console.log(i);
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      // Print each character in a given string 'str' using a for loop
+
+      // Write a for loop that iterates through each character in the given string strand prints it to the console .
+      // Initialize the loop variable ito 0 and use ias the index to access each character in str.
+      // The loop should continue as long as iis less than the length of str.
+      // On each iteration, print the character at index ito the console using console.log() .
+      // After printing the character, increment iby 1 to move to the next character in the string.
+
+      let strr = "Hello";
+
+      for (let i = 0; i < strr.length; i++) {
+        console.log(strr[i]);
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      // Find a Number and Print Its Position
+
+      // Given an integer 'n', write a for loop to iterate through numbers 1 to 20 .
+      // Find if nexists within this range and print its position .
+      // If nis not found, print 'Number not found'
+      let nn = 15; // Задане число
+      let found = false;
+
+      for (let i = 1; i <= 20; i++) {
+        if (i === nn) {
+          console.log(`Number found at position: ${i}`);
+          found = true;
+          break;
+        }
+      }
+
+      if (!found) {
+        console.log("Number not found");
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      // Check for Divisibility by 3 and 4 within a Range
+
+      // Write a for loop to iterate over numbers from 10 to 60 and print each number that is divisible by both 3 and 4
+
+      for (let i = 10; i <= 60; i++) {
+        if (i % 3 === 0 && i % 4 === 0) {
+          console.log(i);
+        }
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      // Determine Leap Years from 2000 to 2020
+
+      // Use a for loop to display all the leap years from the year 2000 to 2020 .
+      // Remember that an ideal leap year is divisible by 4, but not every year divisible by 100 is a leap year, and every year divisible by 400 is a leap year
+
+      for (let year = 2000; year <= 2025; year++) {
+        if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+          console.log(year);
+        }
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      // Compare Squares and Cubes
+
+      // Create a for loop that iterates over numbers from 1 to 15 .
+      // For each number, print whether its square is greater than its cube or vice versa
+
+      for (let i = 1; i <= 15; i++) {
+        let square = i * i;
+        let cube = i * i * i;
+
+        if (square > cube) {
+          console.log(i + ": Square is greater");
+        } else {
+          console.log(i + ": Cube is greater");
+        }
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      //   Print Uppercase Letters and Their Index
+
+      //   Use a for loop to iterate over the ASCII codes of uppercase letters from Ato Z.
+      //   Print each letter along with its position in the alphabet (e.g., A is 1, B is 2)
+
+      for (let i = 65; i <= 90; i++) {
+        let letter = String.fromCharCode(i);
+        let position = i - 64;
+
+        console.log(`${letter} is at position ${position}`);
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      // Palindrome Check with For Loop
+
+      // Given a string, use a for loop to check whether it is a palindrome or not .
+      // Print Palindromeif true and 'Not a palindrome' if false
+
+      let str2 = "madam";
+      let reversed2 = "";
+
+      for (let i = str2.length - 1; i >= 0; i--) {
+        reversed2 += str[i];
+      }
+
+      if (str2 === reversed2) {
+        console.log("Palindrome");
+      } else {
+        console.log("Not a palindrome");
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      //  Log Fibonacci Sequence Below 50
+
+      // Design a JavaScript algorithm that loops through and logs Fibonacci numbers starting from 1 up to a limit of 50 .
+      // The Fibonacci sequence is formed by summing the two previous numbers in the sequence .
+      // Ensure each number is printed to the console on a new line
+      let v = 1;
+      let w = 1;
+
+      while (v <= 50) {
+        console.log(v);
+        let temp = v;
+        v = w;
+        w = temp + w;
+      }
+
+      console.log("***************************");
+      /*********************************************************/
+      //   Print Numbers Divisible by 9
+
+      // Create a program that prints numbers between a given range (1 to 100) that are divisible by 9 using a for loop
+      for (let i = 1; i <= 100; i++) {
+        if (i % 9 === 0) {
+          console.log(i);
+        }
+      }
+    </script>
+  </body>
+</html>

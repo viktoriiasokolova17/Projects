@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>JS</h1>
+    <h2>Objects Exercises</h2>
+
+    <script>
+/**********************************************************************************************/
+///Create an object named student with properties name, age, and grade
+const student = {
+  name: "Anna", 
+  age: 20,          
+  grade: "A"        
+};
+
+console.log(student); //{name: 'Anna', age: 20, grade: 'A'} [[Prototype]]: Object
+
+
+/**********************************************************************************************/
+/// Given an object school = { name: 'ABC School', location: { city: 'New York', state: NY} }, access and print the state value
+const school = {
+  name: 'ABC School', 
+  location: {
+    city: 'New York',
+    state: 'NY'      
+  }
+};
+
+const schoolState = school.location.state;
+
+console.log(schoolState); // NY
+
+/**********************************************************************************************/
+///Modify the price property of an object product = { name: 'Laptop', price: 800 } to 900
+
+const product = { 
+    name: 'Laptop', 
+    price: 800 
+};
+
+product.price = 900;
+
+console.log(product); //900
+
+/**********************************************************************************************/
+///Add properties author with value 'Jane Austen' and year with value 1813 to the object book = { title: 'Pride and Prejudice' }
+
+const book = {
+  title: 'Pride and Prejudice' 
+};
+
+book.author = 'Jane Austen';
+
+book.year = 1813;
+
+console.log(book); //  { title: 'Pride and Prejudice', author: 'Jane Austen', year: 1813 }
+
+/**********************************************************************************************/
+///Delete the password property from the object user = { username: 'john_doe', password: secret}
+
+const user = {
+  username: 'john_doe',
+  password: 'secret'  
+};
+
+delete user.password;
+
+console.log(user); // { username: 'john_doe' }
+
+
+/**********************************************************************************************/
+///Write a program to check if a property ageexists in an object 'person'. Return true if it exists, else return false
+
+const person = {
+  name: 'Alice', 
+  age: 20       
+};
+
+const hasAgeProperty = 'age' in person;
+
+console.log(hasAgeProperty); // true 
+
+/**********************************************************************************************/
+///Create a function propertyCount that takes an object as an argument and returns the count of properties in the object
+
+function propertyCount(obj) {
+  return Object.keys(obj).length;
+}
+const sampleObject = {
+  name: 'Bob',
+  age: 30,
+  city: 'London'
+};
+
+console.log(propertyCount(sampleObject)); // 3
+
+
+/**********************************************************************************************/
+/// Create a function printObjectPropertiesthat takes an object as an argument and logs all the property names (keys) one by one
+
+function printObjectProperties(obj) {
+  for (const key of Object.keys(obj)) {
+    console.log(key);
+  }
+}
+
+const exampleObject = {
+  name: 'Adam',
+  age: 25,
+  country: 'London'
+};
+
+printObjectProperties(exampleObject); // name, age, country
+
+/**********************************************************************************************/
+///Given an object `car`, add a new property colorand set its value to `red`
+
+const car = {
+  brand: 'Toyota',
+  model: 'Corolla'
+};
+
+car.color = 'red';
+
+console.log(car);  //  { brand: 'Toyota', model: 'Corolla', color: 'red' }
+
+
+/**********************************************************************************************/
+/// Check if the object househas the property garageand store the result in a variable
+const house = {
+  rooms: 5,
+  bathrooms: 2,
+  kitchen: 1
+};
+
+const hasGarage = 'garage' in house;
+
+console.log(hasGarage); //  false 
+
+/**********************************************************************************************/
+/// Use a loop to iterate over all properties of bookand store their keys in an array `bookKeys`
+
+const book2 = {
+title: 'Kobzar',
+author: 'Taras Shevchenko'
+};
+
+const bookKeys = [];
+
+for (const key in book2) {
+  bookKeys.push(key); 
+}
+
+console.log(bookKeys); // (2) ['title', 'author']
+
+
+/**********************************************************************************************/
+/// Update the value of the priceproperty in the productobject to `$15.99`
+const product2 = {
+  name: 'Notebook',
+  price: '$20.00'
+};
+
+product2.price = '$15.99';
+
+console.log(product2); // {name: 'Notebook', price: '$15.99'}
+
+/**********************************************************************************************/
+/// Define an object calculatorwith a method addthat takes two numbers and returns their sum
+
+const calculator = {
+  add: function(num1, num2) {
+    return num1 + num2;
+  }
+};
+
+const result = calculator.add(2, 3); 
+console.log(result); // 5
+
+
+/**********************************************************************************************/
+/// Combine the properties of objAand objBinto a new object `combinedObj`.
+let objA = { a: 1, b: 2 }; 
+let objB = { c: 3, d: 4 }; 
+
+let combinedObj = { ...objA, ...objB };
+
+console.log(combinedObj); // {a: 1, b: 2, c: 3, d: 4}
+
+/**********************************************************************************************/
+/// Given an object bookwith properties `title`, `author`, and a nested object publisherwith properties nameand `year`, destructure these properties including the nested ones
+
+const book3 = {
+  title: '1984',
+  author: 'George Orwell',
+  publisher: {
+    name: 'Secker & Warburg',
+    year: 1949
+  }
+};
+
+const { title, author, publisher: { name, year } } = book3;
+
+console.log(title);   // 1984
+console.log(author);  // George Orwell
+console.log(name);    // Secker & Warburg
+console.log(year);    // 1949
+
+/**********************************************************************************************/
+/// Given an object settingswith properties `theme`, `fontSize`, and `showNotifications`, destructure these properties and provide a default value for fontSizeif it's not present
+
+const settings = { 
+  theme: 'dark', 
+  showNotifications: true 
+};
+
+const { theme, fontSize = 16, showNotifications } = settings;
+
+console.log(theme);              // dark
+console.log(fontSize);           // 16 
+console.log(showNotifications);  // true
+
+/**********************************************************************************************/
+///  Given an object responsewith properties `statusCode`, `data`, and `message`, destructure these properties and assign them to variables `status`, `payload`, and inforespectively
+
+const response = {
+  statusCode: 200,
+  data: 'OK',
+  message: 'Request successful'
+};
+
+const { statusCode: status, data: payload, message: info } = response;
+
+console.log(status);   // 200
+console.log(payload);  // OK
+console.log(info);     // Request successful
+
+
+/**********************************************************************************************/
+///Create a function printUserDetailsthat takes an object useras its parameter and destructures `name`, `age`, and emailproperties within the function parameter list. Then, print these values inside the function
+
+const printUserDetails = ({ name, age, email }) => {
+  console.log(`Name: ${name}`);
+  console.log(`Age: ${age}`);
+  console.log(`Email: ${email}`);
+};
+
+const user2 = { name: 'Alice', age: 25, email: 'alice@example.com' };
+printUserDetails(user2); // Name: Alice Age: 25 Email: alice@example.com
+
+
+/**********************************************************************************************/
+///Given an array of objects userswhere each object contains `id`, `name`, and ageproperties, use a loop to destructure these properties and log them to the console
+
+const users = [
+  { id: 1, name: 'John', age: 30 },
+  { id: 2, name: 'Jane', age: 25 },
+  { id: 3, name: 'Mike', age: 35 }
+];
+
+for (const { id, name, age } of users) {
+  console.log(`ID: ${id}, Name: ${name}, Age: ${age}`);
+} //ID: 1, Name: John, Age: 30   ID: 2, Name: Jane, Age: 25  ID: 3, Name: Mike, Age: 35
+
+/**********************************************************************************************/
+/// Given an object moviewith properties `title`, `director`, `releaseYear`, and `genre`, destructure only the titleand directorproperties 
+
+const movie = {
+  titl: 'Inception',
+  director: 'Christopher Nolan',
+  releaseYear: 2010,
+  genre: 'Sci-Fi'
+};
+
+const { titl, director } = movie;
+
+console.log(`Title: ${titl}`);
+console.log(`Director: ${director}`); // Title: Inception  Director: Christopher Nolan
+
+
+/**********************************************************************************************/
+/// Create a function extractDetailsthat takes an object productwith properties `productId`, `productName`, and `price`, and returns a new object with properties idand namecontaining values from productIdand productNamerespectively.
+
+const productt = { productId: '123', productName: 'Laptop', price: 500 };
+
+const extractDetails = ({ productId: id, productName: name }) => {
+  return { id, name };
+};
+
+const details = extractDetails(productt);
+console.log(details);  // {id: '123', name: 'Laptop'}
+
+/**********************************************************************************************/
+///Create a new object named newObjby copying all properties from the existing object originalObjusing the spread operator. The new object should maintain all the properties of the original object.
+
+const originalObj = { a: 1, b: 2, c: 3 };
+
+const newObj = { ...originalObj };
+
+console.log(newObj);  // { a: 1, b: 2, c: 3 }
+
+/**********************************************************************************************/
+///Using the spread operator, create a new object named combinedObjby combining an array of objects arrOfObjectsinto a single object. Ensure each object's properties are included in the final object
+
+
+const arrOfObjects = [{ a: 2 }, { b: 4 }, { c: 6 }];
+
+const combinedObj2 = { ...arrOfObjects[0], ...arrOfObjects[1], ...arrOfObjects[2] };
+
+console.log(combinedObj2);  // { a: 2, b: 4, c: 6 }
+
+/**********************************************************************************************/
+/// Check if an object movie = { title: 'Inception', director: 'Christopher Nolan' } has a property named rating and log the result
+
+const movie2 = { title: 'Inception', director: 'Christopher Nolan' };
+
+const hasMovie = 'rating' in movie;
+
+console.log(hasMovie);  // false
+
+
+/**********************************************************************************************/
+///Given an object fruit = { name: 'Apple', color: Red}, create a function that takes the object and returns an array of its property names
+
+const fruit = { name: 'Apple', color: 'Red' };
+
+const getPropertyNames = (obj) => {
+  return Object.keys(obj);
+};
+
+console.log(getPropertyNames(fruit));  // (2) ['name', 'color']
+
+
+
+    </script>
+</body>
+</html>

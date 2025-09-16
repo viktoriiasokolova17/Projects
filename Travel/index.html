@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+            <div class="logo">
+                <a href="#">
+                    <span class="logo-name">Travel Blog</span>
+                </a>
+                
+            </div>
+
+             <!-- Burger menu icon -->
+             <div class="burger-icon">
+                <i class="material-icons">menu</i>
+            </div>
+
+                <nav class="header-nav">
+                    
+                    <a href="#">Home</a>
+                    <a href="tours.html">Tours</a>
+                    <a href="#destination-section">Destinations</a>
+                    <a href="#travel-tips-section">Travel Tips</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="#gallery-section">Gallery</a>
+                    <a href="#about-us-section">About Us</a>
+                    <a href="#contact-section">Contact</a>
+                
+            <div class="header-search">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="coming soon ....."> 
+                    <a href="#" class="search">Search</a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <section class="hero-section">
+    
+        <h1>Discover Your Next Adventure</h1>
+            <p>Start your best journey now</p>
+
+            <div class="hero-buttons">
+                
+                <button id="openModalBtn" class="hero-btn">
+                    <a href="#" class="hero-btn">Get Started</a>
+                </button>
+            </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <img src="./image/map.jpg" alt="modal img" class="modal-img">
+                    <div class="modal-text">
+                        <h2>Do you dream of a trip?</h2>
+                        <p>Choose the best tour now</p>
+                        <a href="tours.html" class="button-link">
+                            <button id="startBtn">Start</button>
+                        </a>
+                    </div>
+                </div>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination-section" id="destination-section">
+        <h2 class="section-heading">Popular Destinations</h2>
+        <div class="destination-list">
+            <div class="destination-item">
+                <img src="./image/France-Paris.png" alt="Paris" class="destination-img">
+                <h3 class="destination-title">Paris, France</h3>
+                <p class="destination-description">
+                    Explore the Eiffel Tower, cruise the Seine, and enjoy fine dining in cozy cafés.
+                </p>
+                <a href="./tours/paris.html" class="destination-button">Explore More</a>
+            </div>
+            <div class="destination-item">
+                <img src="./image/kyoto-japan.png" alt="Kyoto" class="destination-img">
+                <h3 class="destination-title">Kyoto, Japan</h3>
+                <p class="destination-description">
+                    Visit ancient temples, bamboo forests, and join a traditional tea ceremony.
+                </p>
+                <a href="./tours/kyoto.html" class="destination-button">Explore More</a>
+            </div>
+            <div class="destination-item">
+                <img src="./image/santorini-greecejpg.png" alt="Santorini" class="destination-img">
+                <h3 class="destination-title">Santorini, Greece</h3>
+                <p class="destination-description">
+                    Enjoy stunning sunsets, explore white-washed villages, and relax on volcanic beaches.
+                </p>
+                <a href="./tours/santorini.html" class="destination-button">Explore More</a>
+            </div>
+        </div>
+    </section>
+    
+<section class="travel-tips-section" id="travel-tips-section">
+    <h2 class="section-heading">Travel Tips</h2>
+    <div class="travel-tips-list">
+        <div class="travel-tip">
+            <h3>Plan your trip in advance</h3>
+        </div>
+        <div class="travel-tip">
+            <h3>Allocate the budget</h3>
+        </div>
+        <div class="travel-tip">
+            <h3>Take care of your safety</h3>
+        </div>
+        <div class="travel-tip">
+            <h3>Learn basic phrases</h3>
+        </div>
+        <div class="travel-tip">
+            <h3>Learn the customs</h3>
+        </div>
+    </div>
+</section>
+
+    
+<section class="articles-section" id="articles-section">
+    <h2 class="section-heading">Latest Articles</h2> 
+    <div class="articles-list">
+        <article class="articles-item">
+            <img src="./image/iceland.png" alt="Iceland" class="article-img">
+            <div class="article-content">
+                <h3>Exploring the Wonders of Iceland</h3>
+                <p class="article-details">Reykjavik, Iceland | Travel Date: January 2024</p>
+                <p class="article-summary">
+                    Discover the natural beauty of Iceland, from the stunning Northern Lights to the geothermal hot springs. Explore Reykjavik’s vibrant culture and indulge in local cuisine. The island is known for its breathtaking waterfalls, active volcanoes, and dramatic landscapes. Whether you’re an adventure seeker or someone looking for peace and tranquility, Iceland has something to offer. From the Blue Lagoon to the Golden Circle, each location has its unique charm, and Reykjavik serves as the perfect hub for exploring the wonders of this beautiful country. Additionally, the country offers an opportunity to see rare wildlife, such as puffins, and experience the midnight sun during summer. Don't miss out on whale watching and glacier hiking for a true adventure.
+                </p>
+                <a href="./blog/iceland-post.html" class="show-more">Show More</a>
+            </div>
+        </article>
+
+        <article class="articles-item">
+            <div class="article-content">
+                <h3>A Journey Through the Sahara Desert</h3>
+                <p class="article-details">Marrakech, Morocco | Travel Date: February 2024</p>
+                <p class="article-summary">
+                    Experience the vast expanse of the Sahara Desert with a camel trek. Visit the majestic dunes and enjoy traditional Berber hospitality in a desert camp. The experience includes breathtaking sunrises and sunsets over the sand dunes, which stretch as far as the eye can see. Learn about the ancient trade routes and the nomadic lifestyle that once thrived in these areas. The Sahara offers an unparalleled sense of solitude and a connection to the vastness of nature. Don't forget to stargaze at night, where the desert sky is free from light pollution, revealing millions of stars.
+                </p>
+                <a href="./blog/sahara-post.html" class="show-more">Show More</a>
+            </div>
+            <img src="./image/sahara.png" alt="Sahara" class="article-img">
+        </article>
+
+        <article class="articles-item">
+            <img src="./image/kyoto-japan.png" alt="Kyoto" class="article-img">
+            <div class="article-content">Kyoto
+                <h3>Immersing in Kyoto's Ancient Traditions</h3>
+                <p class="article-details">Kyoto, Japan | Travel Date: March 2024</p>
+                <p class="article-summary">
+                    Explore the cultural heritage of Kyoto, from the serene temples to the traditional tea ceremonies. Discover beautiful cherry blossoms and historic neighborhoods. Kyoto's ancient streets, lined with wooden houses and temples, offer a glimpse into Japan's rich history. Visit the famous Kinkaku-ji, the Golden Pavilion, and wander through the Arashiyama Bamboo Grove. The city's famous Gion district is a must-visit for those interested in traditional Geisha culture. Kyoto is also home to some of Japan’s finest cuisine, including kaiseki, a multi-course meal that highlights seasonal ingredients.
+                </p>
+                <a href="./blog/kyoto-post.html" class="show-more">Show More</a>
+            </div>
+        </article>
+
+        <article class="articles-item">
+            <div class="article-content">
+                <h3>Romantic Getaway in Santorini</h3>
+                <p class="article-details">Santorini, Greece | Travel Date: April 2024</p>
+                <p class="article-summary">
+                    Enjoy breathtaking sunsets and stunning views over the caldera. Wander through charming villages and relax on the beautiful beaches of Santorini. The island’s whitewashed buildings with blue domes create a picture-perfect landscape. Stroll through the narrow streets of Oia, where you’ll find boutique shops, cafes, and art galleries. Take a boat tour around the island, visit the volcanic islands, and swim in the hot springs. Santorini’s wine culture is also worth exploring, with local vineyards offering tours and tastings of their unique volcanic wines.
+                </p>
+                <a href="./blog/sahara-post.html" class="show-more">Show More</a>
+            </div>
+            <img src="./image/santorini.png" alt="Santorini" class="article-img">
+        </article>
+
+        <article class="articles-item">
+            <img src="./image/paris.png" alt="Paris" class="article-img">
+            <div class="article-content">
+                <h3>Discovering the Charms of Paris</h3>
+                <p class="article-details">Paris, France | Travel Date: May 2024</p>
+                <p class="article-summary">
+                    Explore the iconic landmarks of Paris, including the Eiffel Tower and the Louvre. Enjoy world-class dining and stroll along the Seine River. Paris is a city that offers something for everyone, from its historical monuments to its artistic atmosphere. Don’t miss a visit to Montmartre, where artists still gather to paint the scenic views. For those looking for a quieter side of the city, take a walk through the Jardin des Tuileries or the Luxembourg Gardens. Paris also boasts a thriving café culture, where you can sit for hours, people-watching while enjoying a croissant and café au lait.
+                </p>
+                <a href="./blog/paris-post.html" class="show-more">Show More</a>
+            </div>
+        </article>
+
+        <article class="articles-item">
+            <div class="article-content">
+                <h3>Vibrant Energy of New York City</h3>
+                <p class="article-details">New York, USA | Travel Date: June 2024</p>
+                <p class="article-summary">
+                    Experience the bustling energy of New York City. From Broadway shows to iconic landmarks like Times Square and Central Park, there’s something for everyone. New York City is known for its diversity and its vibrant cultural scene. Explore world-class museums like the Metropolitan Museum of Art and the Museum of Modern Art. Take a stroll across the Brooklyn Bridge for stunning views of the city skyline, and don’t forget to visit the Statue of Liberty and Ellis Island. The city’s food scene is unparalleled, offering everything from street food to Michelin-starred restaurants.
+                </p>
+                <a href="./blog/new york-post.html"class="show-more">Show More</a>
+            </div>
+            <img src="./image/new york.png" alt="New York" class="article-img">
+        </article>
+    </div>
+</section>
+    
+    
+ <section class="gallery-section" id="gallery-section">
+    <h2 class="section-heading">Our Gallery</h2>
+    <div class="all">
+        <input checked type="radio" name="respond" id="desktop">
+            <article class="gallery-slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <input type="radio" name="slider" id="switch4">
+                    <input type="radio" name="slider" id="switch5">
+                <div class="gallery-slides">
+                    <div class="gallery-overflow">
+                        <div class="gallery-list">
+                            <article><img src="./image/1 iceland.png">
+                                <span class="image-name">Iceland</span>
+                            </article>
+                            <article><img src="./image/2 sahara.png">
+                                <span class="image-name">Sahara</span>
+                            </article>
+                            <article><img src="./image/3 santorini.png">
+                                <span class="image-name">Santorini</span>
+                            </article>
+                            <article><img src="./image/4 paris.png">
+                                <span class="image-name">Paris</span>
+                            </article>
+                            <article><img src="./image/5 new york.png">
+                                <span class="image-name">New York</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div id="gallery-controls">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </div>
+                <div id="gallery-active">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </div>
+            </article>
+    </div>
+</section>
+
+
+    <section class="about-us-section" id="about-us-section">
+        <h2 class="section-heading">About Us</h2> 
+        <h3>Get to know me</h3>
+
+        <div class="about-us-section-info">
+            <p>Hello! You’ve found me, and I’m so glad you’re here; it’s meant to be!</p>
+            <p>So I’m Liz Carlson, and welcome to my blog, Young Adventuress; a no-filter, vaguely chronological space filled with stories and misadventures about my travels over the years with some musings about life thrown in for good measure.</p>
+            <p>I travel a lot, usually alone, too; that way, I don’t have to compromise. If you’re a fan of chaos, brutal honesty, sarcasm, and girls who think they are wittier than they actually are, then you’ve come to the right place.</p>
+        </div>
+    </section>
+    
+
+    <section class="contact-section" id="contact-section">
+        <h2 class="section-heading">Contact Us</h2>
+        <div class="contacts-form">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="text" id="birthdate" name="birthdate" placeholder="DD/MM/YYYY" required>
+                    <div class="error-message" id="birthdate-error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="postalcode">Postal Code</label>
+                    <input type="text" id="postalcode" name="postalcode" placeholder="Enter your postal code" required>
+                    <div class="error-message" id="postalcode-error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    <div class="error-message" id="phone-error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a subject</option>
+                        <option value="inquiry">General Inquiry</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    <div class="error-message" id="subject-error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    <div class="error-message" id="message-error"></div>
+                </div>
+    
+                <div class="form-group form-check">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">I agree to the Privacy Policy</label>
+                    <div class="error-message" id="privacy-error"></div>
+                </div>
+    
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+  
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="tours.html">Tours</a>
+            <a href="#destination-section">Destinations</a>
+            <a href="#travel-tips-section">Travel Tips</a>
+            <a href="blog.html">Blog</a>
+            <a href="#gallery-section">Gallery</a>
+            <a href="#about-us-section">About Us</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+<br>
+        <p>&copy; 2024 Travel Blog | All rights reserved | Privacy Policy | Terms of Service</p>
+        
+    </footer>
+
+
+    <script src="js/modal.js"></script>
+    <script src="js/contact-us.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+</html>

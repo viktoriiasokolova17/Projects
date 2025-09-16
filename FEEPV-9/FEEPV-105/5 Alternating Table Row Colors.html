@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 10px; 
+            width: 100%;
+            text-align: center;
+        }
+        th, td {
+            padding: 15px; 
+            border: 1px solid #000;
+        }
+        /* tr:nth-child(even) {
+            background-color: aquamarine; 
+        }
+        tr:nth-child(odd) {
+            background-color: blueviolet; 
+        } */
+
+        
+        /* Colored Table Rows on Hover */
+
+        tr {
+            background-color: aquamarine; 
+        }
+        tr:hover {
+            background-color: violet; /* Зміна кольору фону при наведенні */
+        }
+    
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption><h2>Інформація про продукти</h2></caption>
+        <tr>
+            <th colspan="2">Назва товару</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+        </tr>
+        <tr>
+            <td colspan="2">Персики</td>
+            <td>70 грн</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td colspan="2">Дині</td>
+            <td>50 грн</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td colspan="2">Кавуни</td>
+            <td>30 грн</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td colspan="2">Абрикоси</td>
+            <td>60 грн</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td colspan="2">Сливи</td>
+            <td>40 грн</td>
+            <td>40</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

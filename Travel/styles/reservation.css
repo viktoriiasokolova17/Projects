@@ -1,0 +1,168 @@
+/* Reservation*/
+#reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+  
+#reservation-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #005757; 
+}
+
+#reservation-form input {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #00aaa1; 
+    border-radius: 4px;
+    background-color: #fff; 
+}
+
+#reservation-form button {
+    background-color: #008080; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#reservation-form button:hover {
+    background-color: #005757; 
+}
+
+/* Reservation Modal Window */
+.reservation-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.reservation-modal-content {
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #333;
+}
+
+.reservation-modal-close:hover {
+    color: #008080; 
+}
+
+.reservation-h1 {
+    color: #005757;
+    font-size: 3 0px;
+    text-align: center;
+}
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form-label {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.reservation-form-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    padding: 10px;
+    background-color: #008080; 
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #008080;
+}
+
+
+.reservation-people {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #008080;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+}
+
+#total-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e0f2f1;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .reservation-modal-content {
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+@media (max-width: 770px) {
+    .reservation-modal-content {
+        width: 320px;
+    }
+    .reservation-h1 {
+        font-size: 24px; 
+    }
+    .btn-submit {
+        font-size: 14px;
+    }
+}
+@media (max-width: 375px) {
+    .reservation-modal-content {
+        width: 280px;
+    }
+    .reservation-h1 {
+        font-size: 20px;
+    }
+    .reservation-form-input,
+    .reservation-people {
+        font-size: 14px;
+    }
+    .btn-submit {
+        font-size: 12px; 
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .highlight {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Таблиця з Colspan і Rowspan</caption>
+        <thead>
+            <tr>
+                <th>Категорія</th>
+                <th>Деталь 1</th>
+                <th>Деталь 2</th>
+                <th>Деталь 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="highlight">Група 1</td>
+                <td colspan="2">Об'єднані стовпці</td>
+                <td>Одиночний</td>
+            </tr>
+            <tr>
+                <td colspan="2">Об'єднані стовпці</td>
+                <td>Одиночний</td>
+            </tr>
+            <tr>
+                <td>Група 2</td>
+                <td>Одиночний</td>
+                <td>Одиночний</td>
+                <td>Одиночний</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

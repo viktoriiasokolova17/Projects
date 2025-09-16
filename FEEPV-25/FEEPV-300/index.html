@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+
+    <script>
+      /*************************************************************************************************/
+      // Check if value is present in Set
+      // Write a function that takes a Set and a value as arguments. Check if the value is present in the Set
+
+      function isValueInSet(set, val) {
+        return set.has(val);
+      }
+      console.log(isValueInSet(new Set([1, 2, 3]), 2)); // true
+      console.log(isValueInSet(new Set([123]), 2)); // false
+      console.log(isValueInSet(new Set(["1", "2", "3"]), "2")); //  true
+      console.log(isValueInSet(new Set("123"), "2")); //  true
+
+      /*************************************************************************************************/
+      //   Convert a Set to Array
+      //   Write a function that takes a Set as argument. Convert the Set to an Array. Return the Array
+
+      function isValue(set) {
+        return [...set];
+      }
+      console.log(isValue(new Set([1, 2, 3]))); //  [1, 2, 3]
+      console.log(isValue(new Set([123]))); // [123]
+      console.log(isValue(new Set(["1", "2", "3"]))); // ['1', '2', '3']
+      console.log(isValue(new Set("123"))); //  ['1', '2', '3']
+
+      /*************************************************************************************************/
+      //   Get union of two sets
+      //   Write a function that takes two Sets as arguments. Create the union of the two sets. Return the result. Hint: try not to switch to Arrays, this would slow down your code
+
+      function myFunction(a, b) {
+        const result = new Set(a);
+        b.forEach((el) => result.add(el));
+        return result;
+      }
+      console.log(myFunction(new Set("123"), new Set("234"))); //  new Set('1234')
+      console.log(myFunction(new Set([1, 2, 3]), new Set([3, 4, 5]))); //  new Set([1, 2, 3, 4, 5])
+      console.log(myFunction(new Set([false, false, NaN]), new Set([true, true, NaN]))); //  new Set([false, NaN, true])
+
+      /*************************************************************************************************/
+      //   Delete element from Set
+      //   Write a function that takes a Set and a value as argument. If existing in the Set, remove the value from the Set. Return the result
+
+      function deleteElement(set, val) {
+        set.delete(val);
+        return set;
+      }
+      console.log(deleteElement(new Set([1, 2, 3]), 1));  //  new Set([2, 3])
+      console.log(deleteElement(new Set("12345"), "3")); //  new Set(['1', '2', '4', '5'])
+      console.log(deleteElement(new Set([1, 2, 3]), 4));//  new Set([1, 2, 3])
+
+      
+    </script>
+  </body>
+</html>

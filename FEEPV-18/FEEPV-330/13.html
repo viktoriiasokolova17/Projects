@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+
+      .animated-text {
+        font-size: 50px;
+        color: #13579b;
+        animation: moveShadow 3s infinite ease-in-out;
+      }
+
+      @keyframes moveShadow {
+        0% {
+          text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+        }
+        50% {
+          text-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="animated-text">Text with Animated Shadow</h1>
+  </body>
+</html>

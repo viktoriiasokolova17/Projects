@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cash Machine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="atm">
+      <div class="theme-toggle">
+        <span class="icon sun">☀️</span>
+        <label class="switch">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider round"></span>
+        </label>
+        <span class="icon moon">🌙</span>
+      </div>
+
+      <h1>ATM</h1>
+      <p id="balance">Balance: 0 UAH</p>
+
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <div class="buttons">
+        <button id="depositBtn">Deposit</button>
+        <button id="withdrawBtn">Withdraw</button>
+      </div>
+
+      <h3>Transaction History</h3>
+      <ul id="history"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

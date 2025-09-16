@@ -1,0 +1,46 @@
+.p1{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.p2{
+    width: 200px;
+    height: 150px;
+}
+
+.p3{
+    width: 50%;
+    height: 30%;
+}
+
+.p4{
+    height: 50vh;
+}
+
+.parent{
+    font-size: 20px; 
+}
+
+.child-p5{
+    font-size: 1.2em; 
+}
+
+.child-p6{
+    font-size: 1.5rem;
+}
+
+.input-text{
+    width: 20ch;
+}
+
+.child-p8{
+    height: 50vh; 
+}
+.child-p9{
+    width: 50vh; 
+}
+
+.p10{
+    margin-top: -20%; 
+    margin-left: -10%;
+}

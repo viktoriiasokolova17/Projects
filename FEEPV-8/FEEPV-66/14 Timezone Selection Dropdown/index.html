@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Форма з Валідацією Поля Введення</h2>
+    <form>
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username" placeholder="Введіть ім'я" autofocus><br><br>
+        
+        <label for="timezone">Виберіть часовий пояс:</label><br>
+        <select id="timezone" name="timezone">
+            <option value="GMT+02:00">GMT+02:00 Київ, Україна (Стандартний час)</option>
+            <option value="GMT+03:00">GMT+03:00 Київ, Україна (Літній час)</option>
+        </select>
+        <button type="submit">Надіслати</button>
+    </form>
+</body>
+</html>

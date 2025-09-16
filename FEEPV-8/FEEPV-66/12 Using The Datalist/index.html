@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Форма входу</h2>
+    <form>
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username" placeholder="Введіть ім'я" autofocus><br><br>
+        
+        <label for="country">Країна:</label>
+        <input type="text" id="country" name="country" list="countries" placeholder="Країна">
+        <datalist id="countries">
+            <option value="Україна">
+            <option value="Італія">
+            <option value="Німеччина">
+            <option value="Франція">
+            <option value="Великобританія">
+        </datalist> <br>
+        
+        <br>
+        <input type="submit" value="Надіслати">
+    </form>
+</body>
+</html>

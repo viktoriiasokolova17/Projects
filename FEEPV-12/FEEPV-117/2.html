@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sizing Task 2: Percentages</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #fff;
+        color: #333;
+        font:
+          1.2em / 1.5 Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      /* .box {
+        border: 5px solid #000;
+        width: 400px;
+        margin-bottom: 1em;
+      }
+
+      .inner {
+        background-color: rebeccapurple;
+        color: white;
+        border-radius: 5px;
+      } */
+      .box {
+        border: 5px solid #000;
+        width: 400px;
+        margin-bottom: 1em;
+        }
+
+      .inner {
+        background-color: rebeccapurple;
+        color: white;
+        border-radius: 5px;
+        width: 60%; 
+        padding: 10%; 
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <p>Завдання 2
+        У цьому завданні у вас є коробка, яка містить іншу коробку. Ваше завдання зробити внутрішню коробку 60% ширини зовнішньої коробки. Значення властивості box-sizingвстановлено на border-box, що означає, що загальна ширина включає будь-які відступи та межі. Ви також повинні надати внутрішньому полі відступу 10%, використовуючи ширину (або вбудований розмір) як розмір, з якого обчислюється цей відсоток.</p>
+    <div class="box">
+      <div class="inner">Make me 60% of my parent's width.</div>
+    </div>
+  </body>
+</html>

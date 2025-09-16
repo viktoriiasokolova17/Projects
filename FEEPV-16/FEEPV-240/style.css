@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rebeccapurple;
+}
+h2 {
+    font-size: 26px;
+    text-align: center;
+    color: aquamarine;
+}
+p{
+    font-size: 22px;
+    line-height: 1.2;
+}
+figure{
+     margin: 0 auto;
+    text-align: center;
+}
+img {
+	width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+figcaption{
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p{
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    figure{
+         margin: 0 auto;
+        text-align: center;
+    }
+    img {
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+    }
+    figcaption{
+        font-size: 20px;
+    }
+}
+

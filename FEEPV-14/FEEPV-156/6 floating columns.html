@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+      .wrapper{
+            background: #fff;
+            min-width: 960px;
+            margin: 0 auto;
+            padding: 28px;
+        }
+        .wrapper::after{
+          content: "";
+          display: block;
+          clear: both;
+        }
+        .service{
+          float: left;
+            background: #eee;
+            width: 30%;
+            margin: 1%;
+            height: 140px;
+
+        }
+        .content{
+          padding: 10px;
+          background: #ccc;
+          clear: left;
+          margin-top: 100px;
+        }
+        .section, aside{
+          float: left;
+          width: 40%;
+          margin: 1%;
+          background: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="services">
+        <div class="service">
+          <h2>Service 1</h2>
+              <p>This is service 1</p>
+      </div>
+      <div class="service">
+          <h2>Service 2</h2>
+              <p>This is service 2</p>
+      </div>
+      <div class="service">
+          <h2>Service 3</h2>
+              <p>This is service 3</p>
+      </div>
+     
+    </div>
+
+    <div style="clear: both;"></div>
+    <div class="content">
+      <h2>Content</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, facere et esse modi nobis inventore. Iste soluta unde, distinctio repellendus suscipit deserunt, est consectetur saepe veritatis porro tempora iusto deleniti</p>
+    </div>
+    
+    <div class="columns">
+      <section>
+        <h2>This is column 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus perspiciatis quas consectetur! Reprehenderit voluptatibus aliquid non at quasi quam. Enim consectetur rem dicta reprehenderit exercitationem labore incidunt nesciunt nam</p>
+      </section>
+      <aside>
+        <h2>This is column 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus perspiciatis quas consectetur! Reprehenderit voluptatibus aliquid non at quasi quam. Enim consectetur rem dicta reprehenderit exercitationem labore incidunt nesciunt nam</p>
+      </aside>
+    </div>
+  </div>
+
+</body>
+</html>

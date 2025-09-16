@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .button {
+        padding: 1em 2em;
+        background: blue;
+        border: 0;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        font-size: 2rem;
+        transition: transform 100ms;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-0.75rem);
+        transition: transform 250ms;
+      }
+
+      .party-time {
+        animation: party 2000ms infinite;
+      }
+
+      /* @keyframes party {
+        0% {
+          background-color: red;
+        }
+        40% {
+          background-color: green;
+        }
+        20% {
+          background-color: orange;
+        }
+        60% {
+          background-color: blue;
+        }
+        80% {
+          background-color: purple;
+        }
+        100% {
+          background-color: yellow;
+        }
+      } */
+      @keyframes party {
+        0%, 50% {
+          background-color: red;
+        }
+        25%,75% {
+          background-color: yellow;
+        }
+      
+        100% {
+          background-color: hsl(200, 72%, 35%);
+        }
+      }
+
+
+      /*****/
+      .sqr{
+        width: 120px;
+        height: 120px;
+        background-image: conic-;
+        border-radius: 10px;
+        cursor: pointer;
+        animation: rotate 0.5s infinite linear;
+      }
+
+      @keyframes rotate {
+        to{
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <button class="button party-time">Click me!</button>
+    <div class="sqr"></div>
+  </body>
+</html>

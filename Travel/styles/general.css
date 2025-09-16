@@ -1,0 +1,91 @@
+/* general */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+p, a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-heading {
+    font-size: 32px;
+    color: #008080;
+    margin: 20px 0;
+    position: relative;
+    margin-left: 400px; 
+    margin-right: 400px; 
+    text-align: center;
+}
+
+.section-heading::before,
+.section-heading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+}
+
+.section-heading::before {
+    left: 0; 
+    background-image: url('./image/branch--left.png'); 
+}
+
+.section-heading::after {
+    right: 0; 
+    background-image: url('./image/branch--right.png'); 
+}
+@media (max-width: 1440px) {
+    .section-heading{
+        margin: 0 40px;
+        display: block; /*inline*/
+    }
+    .section-heading::before {
+        display: none;
+    }
+    .section-heading::after {
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
+    .section-heading{
+       font-size: 28px;
+    }
+}
+@media (max-width: 770px) {
+    .section-heading{
+       font-size: 26px;
+    }
+}
+@media (max-width: 375px) {
+    .section-heading{
+       font-size: 24px;
+    }
+}
+
+/* icons */
+.header-nav .material-icons {
+    font-size: 24px; 
+    color: #fff; 
+    vertical-align: middle; 
+}

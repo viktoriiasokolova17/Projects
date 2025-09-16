@@ -1,0 +1,77 @@
+{
+  "user": {
+    "name": "Samantha"
+  },
+  "menuItems": [
+    { "title": "Dashboard", "icon": "images/dashboard.svg" },
+    { "title": "Food Order", "icon": "images/food-order.svg" },
+    { "title": "Favorite", "icon": "images/favorite.svg" },
+    { "title": "Message", "icon": "images/message.svg" },
+    { "title": "Order History", "icon": "images/order-history.svg" },
+    { "title": "Bills", "icon": "images/bills.svg" },
+    { "title": "Setting", "icon": "images/setting.svg" }
+  ],
+  "categories": [
+    { "name": "Bakery", "icon": "./images/bakery.svg" },
+    { "name": "Burger", "icon": "./images/burger.svg" },
+    { "name": "Beverage", "icon": "./images/bevarage.svg" },
+    { "name": "Chicken", "icon": "./images/chicken.svg" },
+    { "name": "Pizza", "icon": "./images/pizza.svg" },
+    { "name": "Seafood", "icon": "./images/seafood.svg" }
+  ],
+  "popularDishes": [
+    {
+      "title": "Fish Burger",
+      "price": 5.59,
+      "image": "./images/fish-burger.png",
+      "rating": 5,
+      "discount": "15%"
+    },
+    {
+      "title": "Beef Burger",
+      "price": 5.59,
+      "image": "./images/beef-burger.png",
+      "rating": 5,
+      "discount": "15%"
+    },
+    {
+      "title": "Cheese Burger",
+      "price": 5.59,
+      "image": "./images/cheese-burger.png",
+      "rating": 5,
+      "discount": "15%"
+    }
+  ],
+  "recentOrders": [
+    {
+      "title": "Fish Burger",
+      "price": 5.59,
+      "distance": "4.97 km",
+      "time": "21 min",
+      "image": "./images/pizza.png"
+    },
+    {
+      "title": "Japan Ramen",
+      "price": 5.59,
+      "distance": "4.97 km",
+      "time": "21 min",
+      "image": "./images/japan-ramen.png"
+    },
+    {
+      "title": "Fried Rice",
+      "price": 5.59,
+      "distance": "4.97 km",
+      "time": "21 min",
+      "image": "./images/fried-rice.png"
+    }
+  ],
+  "orderMenu": [
+    { "title": "Pepperoni Pizza", "quantity": 1, "price": 5.59 },
+    { "title": "Cheese Burger", "quantity": 1, "price": 5.59 },
+    { "title": "Vegan Pizza", "quantity": 1, "price": 5.59 }
+  ],
+  "balance": 12000,
+  "address": "Elm Street, 23",
+  "serviceFee": 1.0,
+  "total": 202.0
+}

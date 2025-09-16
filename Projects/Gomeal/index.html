@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoMeal Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Sidebar (Navigation) -->
+      <aside class="sidebar">
+        <img class="logo" src="./images/logo.svg" alt="GoMeal logo" />
+        <div class="menu-list">
+          <!-- Тут динамічно підставимо з JS -->
+        </div>
+
+        <div class="upgrade-box">
+          <p>Upgrade your Account to Get Free Voucher</p>
+          <button>Upgrade</button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header>
+          <h1>Hello, Samantha</h1>
+          <input type="text" placeholder="What do you want eat today..." />
+        </header>
+
+        <section class="voucher">
+          <h2>Get Discount Voucher Up To 20%</h2>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </section>
+
+        <section class="categories">
+          <h2>Category</h2>
+          <div class="category-list">
+            <!-- Icons: Bakery, Burger, Beverage, etc -->
+          </div>
+        </section>
+
+        <section class="popular">
+          <div style="display: flex; justify-content: center; align-items: center; height: auto; background: linear-gradient(135deg, #ff7e5f, #feb47b); font-family: 'Poppins', sans-serif; font-size: 3rem; color: white; font-weight: 700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); letter-spacing: 2px">🚀 Coming Soon</div>
+
+          <h2>Popular Dishes</h2>
+          <div class="product-cards">
+            <div class="product-card">
+              <span class="discount-badge">15% Off</span>
+              <img src="./images/fish-burger.png" alt="Fish Burger" class="product-image" />
+              <div class="product-details">
+                <div class="rating">★★★★★</div>
+                <h3 class="product-title">Fish Burger</h3>
+                <p class="product-price"><span>$</span>5.59</p>
+              </div>
+              <button class="add-button">+</button>
+            </div>
+
+            <div class="product-card">
+              <span class="discount-badge">15% Off</span>
+              <img src="./images/beef-burger.png" alt="Beef Burger" class="product-image" />
+              <div class="product-details">
+                <div class="rating">★★★★★</div>
+                <h3 class="product-title">Beef Burger</h3>
+                <p class="product-price"><span>$</span>5.59</p>
+              </div>
+              <button class="add-button">+</button>
+            </div>
+
+            <div class="product-card">
+              <span class="discount-badge">15% Off</span>
+              <img src="./images/cheese-burger.png" alt="Cheese Burger" class="product-image" />
+              <div class="product-details">
+                <div class="rating">★★★★★</div>
+                <h3 class="product-title">Cheese Burger</h3>
+                <p class="product-price"><span>$</span>5.59</p>
+              </div>
+              <button class="add-button">+</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="orders">
+          <div style="display: flex; justify-content: center; align-items: center; height: auto; background: linear-gradient(135deg, #ff7e5f, #feb47b); font-family: 'Poppins', sans-serif; font-size: 3rem; color: white; font-weight: 700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); letter-spacing: 2px">🚀 Coming Soon</div>
+
+          <h2>Recent Order</h2>
+          <div class="recent-orders">
+            <!-- Recent order cards -->
+          </div>
+        </section>
+      </main>
+
+      <!-- Right Sidebar (Balance, Address, Order Menu) -->
+      <aside class="sidebar-right">
+        <div style="display: flex; justify-content: center; align-items: center; height: auto; background: linear-gradient(135deg, #ff7e5f, #feb47b); font-family: 'Poppins', sans-serif; font-size: 1rem; color: white; font-weight: 700; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); letter-spacing: 2px">🚀 Coming Soon</div>
+
+        <div class="balance-section">
+          <p>Your Balance</p>
+          <div class="balance-box">
+            <div class="balance">
+              <span class="balance-label">Balance</span>
+              <span class="balance-value">$12,000</span>
+            </div>
+            <div class="balance-buttons">
+              <button>Top Up</button>
+              <button>Transfer</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="address-section">
+          <p>Your Address</p>
+          <p>Elm Street, 23</p>
+          <button>Change</button>
+        </div>
+
+        <div class="order-menu">
+          <h3>Order Menu</h3>
+          <ul>
+            <li>Pepperoni Pizza - $5.59</li>
+            <li>Cheese Burger - $5.59</li>
+            <li>Vegan Pizza - $5.59</li>
+          </ul>
+          <p>Service: +$1.00</p>
+          <p>Total: $202.00</p>
+          <button>Checkout</button>
+        </div>
+      </aside>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

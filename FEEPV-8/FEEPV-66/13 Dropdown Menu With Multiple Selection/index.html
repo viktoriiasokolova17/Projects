@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Форма з Валідацією Поля Введення</h2>
+    <form>
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username" placeholder="Введіть ім'я" autofocus><br><br>
+        
+        <label for="email">Електронна пошта:</label>
+        <input 
+            type="text" 
+            id="email" 
+            name="email" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+            placeholder="example@example.com" 
+            required
+        >
+        <input type="submit" value="Надіслати">
+    </form>
+</body>
+</html>

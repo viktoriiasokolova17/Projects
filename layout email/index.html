@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            /* font-family:  */
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 1);
+            max-width: 600px;
+        }
+        .header {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            background: rgba(4, 0, 20, 1);
+        }
+        .logo-content {
+            width: 86.2px;
+            height: 16px;
+            position: relative;
+            display: flex;
+            text-align: center;
+            align-items: center; 
+        }
+        .logo {
+            max-width: 100%; 
+            height: auto; 
+            margin-top: 30px; 
+        }
+        .congratulations-message {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 38.4px;
+            background: linear-gradient(103.91deg, #3ABEB8 -5.07%, #F9BE19 96.12%);
+            background-clip: text; 
+            color: transparent; 
+            margin-top: 39.5px;
+            margin-bottom: 85px;
+        }
+         .hero-section, .features-section, .getting-started-section, .call-to-action-section, .footer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero-greeting {
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 700;
+            margin: 48px;
+            color: rgba(11, 0, 51, 1);
+
+        }
+        .hero-description {
+            font-size: 16px;
+            line-height: 1.6;
+            font-weight: 700;
+            color: rgba(57, 58, 68, 1);
+        }
+        
+        .hero-info, .features-item, .call-to-action-description {
+            font-size: 16px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        .hero-info span, .features-item span {
+            font-weight: 700;
+        }
+        .hero-box {
+            width: 550px;
+            height: 220px;
+            border-radius: 16px;
+            background: rgba(4, 0, 20, 1);
+            margin-top: 24px;
+            margin: 0 auto; 
+        }
+        .features-title, .getting-started-title, .call-to-action--title {
+            font-size: 16px;
+            line-height: 1.6;
+            font-weight: 700;
+            margin-top: 24px;
+        }
+        .features-item {
+            list-style-type: none;
+            margin-bottom: 24px;
+        }
+        .features-line {
+            width: 550px; 
+            height: 1px; 
+            background: rgba(182, 182, 182, 1);
+        }
+        .getting-started-title {
+            margin-top: 48px;
+            margin-bottom: 24px;
+        }
+        .getting-started-box {
+            width: 550px;
+            height: 160px;
+            background-color: rgba(4, 0, 20, 1);
+            color: #fff; /* Колір тексту */
+            height: 160px;
+            border-radius: 10px; 
+            text-align: left;
+            padding: 25.5px 0;
+            padding-left: 40px;
+            margin: 0 auto 24px; 
+            display: flex;
+            align-items: center;
+        }
+        .getting-started-box:nth-child(odd){
+            width: 550px;
+            height: 160px;
+            justify-content: flex-end; 
+            padding-left: 0; 
+            padding-right: 40px; 
+        }
+        .getting-started-box-p {
+            font-size: 22px;
+            line-height: 1.4;
+            font-weight: 400;
+            color:  rgba(255, 255, 255, 1);
+        }
+        .getting-started-box-p span {
+            font-weight: 700;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            height: 100%;
+        }
+        .call-to-action-button {
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            padding: 11px 24px;
+            color:  rgba(255, 255, 255, 1);
+            background: linear-gradient(88.42deg, #4CABE0 -155.4%, #3ABE9B 98.06%);
+            cursor: pointer;
+            margin-top: 24px;
+        }
+        .call-to-action-description {
+            margin: 24px 0;
+        }
+        .footer {
+            background: rgba(214, 214, 214, 1);
+        }
+        .footer-text {
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: 400;
+            color: rgba(114, 115, 121, 1);
+            padding: 24px 25px; 
+            margin: 0;
+        }
+        .footer-link {
+            color: rgba(58, 190, 184, 1);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo-content">
+            <img src="./logo.svg" class="logo" alt="CoachBot logo">
+        </a>
+        <h1 class="congratulations-message"><span>Congratulations [First Name]</span></h1>
+        
+    </header>
+
+    <section class="hero-section">
+        <h2 class="hero-greeting">Hi [First Name],👋</h2>
+            <p class="hero-description">You just unlocked your next level of personal growth! 🪴</p>
+            <p class="hero-info">Here at CoachBot, we are breaking down all barriers to quality coaching like cost, availability and location – be it on our <span>web platform</span> or <span>WhatsApp</span>.</p>
+            <div class="hero-box">
+                <!-- <img src="macbook.png" alt="image macbook">
+                <img src="phone.png" alt="image phone"> -->
+            </div>
+    </section>
+
+    <section class="features-section">
+       <h3 class="features-title">Here’s what you can expect:</h3>
+
+       <ul class="features-list">
+            <li class="features-item">✅<span>Personalized coaching </span> tailored to your personal and professional goals, whether it’s improving your career, personal growth, or well-being.</li>
+            <li class="features-item">✅<span>Real-time support</span> whenever you need it—CoachBot is available 24/7 to help you stay on track and motivated.</li>
+            <li class="features-item">✅The option to <span>connect with expert human coaches</span> for deeper insights when you need that extra guidance.</li>
+            <div class="features-line"></div>
+       </ul>
+    </section>
+
+    <section class="getting-started-section">
+        <h2 class="getting-started-title">Here's how you can get started:</h2>
+
+        <div class="getting-started-box">
+            <p class="getting-started-box-p">Have your first <br> conversation with <br> <span>CoachBot</span> , your <br> personal AI coach.</p>
+             <!-- <img src="" alt="1" class="getting-started-image"> -->
+        </div>
+        <div class="getting-started-box">
+            <p class="getting-started-box-p">Explore our <span>LifeVision</span> <br> assessment to gain a <br> 360° view of your <br> current life situation.</p>
+            <!-- <img src="" alt="1" class="getting-started-image"> -->
+        </div>
+        <div class="getting-started-box">
+            <p class="getting-started-box-p">Start setting and <br> tracking your goals <br> using <span>GoalTrack</span>.</p>
+             <!-- <img src="" alt="1" class="getting-started-image"> -->
+        </div>
+    </section>
+
+    <section class="call-to-action-section">
+        <h2 class="call-to-action--title">We’re excited to be a part of your journey. 💪 <br> Let’s make great things happen!</h2>
+            <div class="button-container">
+                <button class="call-to-action-button">Explore Now</button>
+            </div>
+            <p class="call-to-action-description">Warm regards, Your CoachBot Team 🧡</p>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">You’re receiving this email because you have an account in CoachBot AI. If you are not sure why you’re receiving this, please contact us through our <a href="" class="footer-link">Support Center</a>.</p>
+    </footer>
+
+
+</body>
+</html>
+

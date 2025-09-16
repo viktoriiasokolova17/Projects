@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Форма з різними типами полів введення</h2>
+    <form>
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" placeholder="Введіть ім'я" required><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введіть пароль" required><br><br>
+
+
+        <label for="subscribe">Підписатися на розсилку:</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+        <label>Стать:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловік</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жінка</label><br><br>
+
+        <label for="drink">Улюблений напій:</label>
+        <select id="drink" name="drink">
+            <option value="coffee">Кава</option>
+            <option value="tea">Чай</option>
+            <option value="other">Інше</option>
+        </select><br><br>
+
+        <label for="fileUpload">Завантажити файл:</label>
+        <input type="file" id="fileUpload" name="fileUpload"><br><br>
+
+        <input type="submit" value="Надіслати">
+    </form>
+</body>
+</html>
